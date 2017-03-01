@@ -6,7 +6,17 @@
  * @param  { Number } b
  * @return { Number }
  */
+function greaterNumber(a, b){
+	a = 1;
+	b = 2;
+	if(a > b){
+		return a;
+	}else if(b > a){
+		return b;
+	}
+}
 
+greaterNumber();
 
 /**
  * Create a function called 'stringOfNumbers'.
@@ -17,7 +27,13 @@
  * @param  { Number } n
  * @return { String }
  */
-
+function stringOfNumbers(n) {
+	arrey = [];
+	for (var i = 0; arrey.length <= 10; i++) {
+		arrey[i];
+	}
+	console.log(i);
+}
 
 /**
  * Create a function called 'sumOfArray'.
@@ -61,3 +77,18 @@
  * @param  { String } operator ('add', subtract, 'multiply', 'divide')
  * @return { Number/String }
  */
+
+function calculate(uno, dos, stringo){
+	if(stringo = "add"){
+		uno + dos
+	}else if(stringo = "subtract"){
+		uno - dos
+	}else if(stringo = "divide"){
+		uno / dos
+	}else if(stringo = "multiply"){
+		uno * dos
+	}
+	return;
+}
+
+calculate(1, 2, "add");
