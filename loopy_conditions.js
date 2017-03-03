@@ -7,8 +7,6 @@
  * @return { Number }
  */
 function greaterNumber(a, b){
-	a = 1;
-	b = 2;
 	if(a > b){
 		return a;
 	}else if(b > a){
@@ -16,7 +14,7 @@ function greaterNumber(a, b){
 	}
 }
 
-greaterNumber();
+greaterNumber(1, 2);
 
 /**
  * Create a function called 'stringOfNumbers'.
@@ -29,11 +27,13 @@ greaterNumber();
  */
 function stringOfNumbers(n) {
 	arrey = [];
-	for (var i = 0; arrey.length <= 10; i++) {
+	for (var i = 0; arrey.length <= n; i++) {
 		arrey[i];
 	}
 	console.log(i);
 }
+
+stringOfNumbers(10);
 
 /**
  * Create a function called 'sumOfArray'.
@@ -43,8 +43,16 @@ function stringOfNumbers(n) {
  * @param  { array } arr
  * @return { Number }
  */
+function sumOfArray(a){
+	a = [1, 2, 3, 4, 5];
+	var res = 0;
+	for(var i = 0; i < a.length; i++){
+		res += a[i];
+	}
+	console.log(res);
+}
 
-
+sumOfArray();
 /**
  * Create a function called 'getEvens'.
  * This function will take in a parameter that is an array.
@@ -77,18 +85,25 @@ function stringOfNumbers(n) {
  * @param  { String } operator ('add', subtract, 'multiply', 'divide')
  * @return { Number/String }
  */
-
-function calculate(uno, dos, stringo){
-	if(stringo = "add"){
-		uno + dos
-	}else if(stringo = "subtract"){
-		uno - dos
-	}else if(stringo = "divide"){
-		uno / dos
-	}else if(stringo = "multiply"){
-		uno * dos
-	}
-	return;
+function calculate(num1, num2, operator){
+  if(operator === "add"){
+    var r1 = num1 + num2;
+    console.log(r1);
+  }else if(operator === "subtract"){
+    var r2 = num1 - num2;
+    console.log(r2);
+  }
+  else if(operator === "divide"){
+    var r3 = num1/num2;
+    console.log(r3);
+  }
+  else if(operator === "multiply"){
+    var r4 = num1*num2;
+    console.log(r4);
+  }else{
+    var r5 = operator + " is the wrong operator.";
+    console.log(r5);
+  }
 }
 
-calculate(1, 2, "add");
+calculate(3, 2, "multiply");
