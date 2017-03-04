@@ -27,10 +27,10 @@ greaterNumber(1, 2);
  */
 function stringOfNumbers(n) {
 	arrey = [];
-    num = 0;
+    	num = 0;
 	for (var i = 0; arrey.length <= n; i++) {
         arrey.push(num);
-		arrey[i];
+	arrey[i];
         num++;
 	}
 	console.log(arrey);
@@ -67,9 +67,9 @@ function getEvens(array){
 	array = [1, 2, 3, 4, 5];
 	var even = [];
 	for(var i = 0; i != 5; i++){
-      var x = array[i];
-      var check = ( x & 1 ) ? "odd" : "even";
-      if(check == "even"){
+      	var x = array[i];
+      	var check = ( x & 1 ) ? "odd" : "even";
+      	if(check == "even"){
         even.push(array[i]);
       }
       console.log(even);
@@ -90,9 +90,9 @@ function getOdds(array){
 	array = [1, 2, 3, 4, 5];
 	var odd = [];
 	for(var i = 0; i != 5; i++){
-      var x = array[i];
-      var check = ( x & 1 ) ? "odd" : "even";
-      if(check == "odd"){
+      	var x = array[i];
+      	var check = ( x & 1 ) ? "odd" : "even";
+      	if(check == "odd"){
         odd.push(array[i]);
       }
       console.log(odd);
