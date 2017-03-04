@@ -8,9 +8,9 @@
  */
 function greaterNumber(a, b){
 	if(a > b){
-		return a;
+		console.log(a);
 	}else if(b > a){
-		return b;
+		console.log(b);
 	}
 }
 
@@ -27,10 +27,13 @@ greaterNumber(1, 2);
  */
 function stringOfNumbers(n) {
 	arrey = [];
+    num = 0;
 	for (var i = 0; arrey.length <= n; i++) {
+        arrey.push(num);
 		arrey[i];
+        num++;
 	}
-	console.log(i);
+	console.log(arrey);
 }
 
 stringOfNumbers(10);
@@ -60,7 +63,20 @@ sumOfArray();
  * @param  { array } arr
  * @return { array }
  */
+function getEvens(array){
+	array = [1, 2, 3, 4, 5];
+	var even = [];
+	for(var i = 0; i != 5; i++){
+      var x = array[i];
+      var check = ( x & 1 ) ? "odd" : "even";
+      if(check == "even"){
+        even.push(array[i]);
+      }
+      console.log(even);
+    }
+}
 
+getEvens();
 
 /**
  * Create a function called 'getOdds'.
@@ -70,6 +86,20 @@ sumOfArray();
  * @return { array }
  */
 
+function getOdds(array){
+	array = [1, 2, 3, 4, 5];
+	var odd = [];
+	for(var i = 0; i != 5; i++){
+      var x = array[i];
+      var check = ( x & 1 ) ? "odd" : "even";
+      if(check == "odd"){
+        odd.push(array[i]);
+      }
+      console.log(odd);
+    }
+}
+
+getOdds();
 
 /**
  * Create a function called 'calculate'.
